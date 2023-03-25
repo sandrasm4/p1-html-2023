@@ -1,0 +1,57 @@
+body {
+    background-image: url(http://ichef.bbci.co.uk/wwfeatures/1600_900/images/live/p0/3k/rz/p03krzlp.jpg);
+    background-repeat:no-repeat;
+}
+
+.box {
+    position: absolute; top: 20px; right: 20px;
+    background-color:transparent;
+    padding-left: 10px;
+}
+p {
+    text-align: center;
+}
+#firma {
+    position: inherit;
+    border-radius: 0%;
+    border: 0px;
+    width: 200px;
+    height: 100px;
+}
+#name {
+    position: absolute; top: 300px; right: 500px;
+    text-decoration-line: overline;
+    letter-spacing: 5px;
+}
+.section2 {
+    background-image: url(https://i.pinimg.com/originals/a9/69/25/a969251ede6e85501d1259e478cae67b.jpg);
+    background-repeat:no-repeat;
+    background-size: 150%;
+    margin-top: 700px;
+    height: 600px;
+    color: hsl(208, 100%, 97%);  
+}
+.section3 {
+    color: #878788;   
+}
+
+.section4 {
+    
+    background-image: url(http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg);
+}
+
+#cara {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border: 0px;
+    position: absolute; right: 500px;
+}
+
+img {
+    width: 500px;
+    height: 350px;
+    border: 1px solid #878788;
+}
+
+
