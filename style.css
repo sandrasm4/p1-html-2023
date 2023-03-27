@@ -70,11 +70,16 @@ p {
     background-image: url(http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    filter: brightness(40%);
+    /*filter: brightness(40%);*/
     object-fit: fill;
     color: hsl(208, 100%, 97%);
     vertical-align: middle;
     align-content: center;
+}
+
+#noOscuro{
+    filter: brightness(100%);
+    background: transparent;
 }
 
 .section6 {
@@ -85,7 +90,6 @@ p {
     vertical-align: middle;
     color: #878788;
     padding-top: 200px;
-    
     
 }
 .linea {
@@ -116,6 +120,9 @@ p {
 #portfolio {
     border: 1px solid #878788;
 }
+menu:hover{
+    background-color: #ddd;
+}
 p:last-of-type{
     
     text-align: center;
@@ -123,6 +130,14 @@ p:last-of-type{
 }
 table{
     width: 100%;
+}
+
+form{
+    text-align: center;
+}
+.table-hover:hover{
+    background-color: #dddddd27;
+    
 }
 
 
