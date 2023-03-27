@@ -18,40 +18,95 @@ p {
     width: 200px;
     height: 100px;
 }
+#firma2 {
+    position: absolute; right: 500px;
+    margin-top: 125px;
+    border-radius: 0%;
+    border: 0px;
+    width: 250px;
+    height: 150px;
+}
 #name {
     position: absolute; top: 300px; right: 500px;
-    text-decoration-line: overline;
     letter-spacing: 5px;
 }
 .section2 {
     background-image: url(https://i.pinimg.com/originals/a9/69/25/a969251ede6e85501d1259e478cae67b.jpg);
     background-repeat:no-repeat;
-    background-size: 150%;
+    background-size: 100%;
     margin-top: 700px;
     height: 600px;
     color: hsl(208, 100%, 97%);  
 }
+
+#section22 {
+    padding-top: 250px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
 .section3 {
-    color: #878788;   
+    font-size: 25pt;
 }
 
 .section4 {
-    
+    color: #878788;
+    table-layout: fixed;
+    padding-left: 70;
+    padding-right: 70;
+}
+
+.section5 {
+    position: absolute; right: 5px;
+    border-collapse: collapse;
+    align-items: center;
     background-image: url(http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg);
+    filter: brightness(80%);
+    width: 100%;
+    height: 450px;
+    color: hsl(208, 100%, 97%);
+    vertical-align: middle;
+    align-content: center;
+}
+
+.section6 {
+    background-image: url(https://blog.lacie.com/wp-content/uploads/sites/8/2020/03/Hilmer_060414_12887.jpg);
+    background-repeat: no-repeat;
+    color: #878788;
+    width: 100%;
+    position: absolute; top: 2700px; 
+}
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    max-width: 200px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+.linea-puntos {
+    border-top: 1px solid hsl(208, 100%, 97%);  
+    height: 2px;
+    max-width: 200px;
+    padding: 0;
+    margin: 20px auto 0 auto;
 }
 
 #cara {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
     border: 0px;
-    position: absolute; right: 500px;
+    position: absolute; right: 550px;
 }
 
-img {
-    width: 500px;
-    height: 350px;
+#portfolio {
     border: 1px solid #878788;
+}
+p:last-of-type{
+    text-align: center;
+    color: black;
 }
 
 
