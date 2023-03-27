@@ -1,7 +1,10 @@
-body {
+.section1 {
     background-image: url(http://ichef.bbci.co.uk/wwfeatures/1600_900/images/live/p0/3k/rz/p03krzlp.jpg);
     background-repeat:no-repeat;
+    background-size: 100%;
+    height: 800px;
 }
+
 
 .box {
     position: absolute; top: 20px; right: 20px;
@@ -19,24 +22,26 @@ p {
     height: 100px;
 }
 #firma2 {
-    position: absolute; right: 500px;
-    margin-top: 125px;
+    position: absolute; right: 40%;
+    margin-top: 150px;
     border-radius: 0%;
     border: 0px;
     width: 250px;
     height: 150px;
 }
 #name {
-    position: absolute; top: 300px; right: 500px;
+    position: relative; top: 200px;
+    text-align: center;
     letter-spacing: 5px;
 }
 .section2 {
     background-image: url(https://i.pinimg.com/originals/a9/69/25/a969251ede6e85501d1259e478cae67b.jpg);
     background-repeat:no-repeat;
     background-size: 100%;
-    margin-top: 700px;
+    margin-top: 0px;
     height: 600px;
     color: hsl(208, 100%, 97%);  
+    
 }
 
 #section22 {
@@ -48,23 +53,25 @@ p {
 
 .section3 {
     font-size: 25pt;
+    
 }
 
-.section4 {
+#section4 {
     color: #878788;
-    table-layout: fixed;
-    padding-left: 70;
-    padding-right: 70;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
 }
 
 .section5 {
-    position: absolute; right: 5px;
+    
     border-collapse: collapse;
     align-items: center;
     background-image: url(http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg);
-    filter: brightness(80%);
-    width: 100%;
-    height: 450px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: brightness(40%);
+    object-fit: fill;
     color: hsl(208, 100%, 97%);
     vertical-align: middle;
     align-content: center;
@@ -73,9 +80,13 @@ p {
 .section6 {
     background-image: url(https://blog.lacie.com/wp-content/uploads/sites/8/2020/03/Hilmer_060414_12887.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1000px;
+    vertical-align: middle;
     color: #878788;
-    width: 100%;
-    position: absolute; top: 2700px; 
+    padding-top: 200px;
+    
+    
 }
 .linea {
     border-top: 1px solid black;
@@ -94,19 +105,24 @@ p {
 }
 
 #cara {
+    align-self: center;
     width: 150px;
     height: 150px;
     margin-top: 15px;
     border: 0px;
-    position: absolute; right: 550px;
+    position: absolute; right: 44%;
 }
 
 #portfolio {
     border: 1px solid #878788;
 }
 p:last-of-type{
+    
     text-align: center;
     color: black;
+}
+table{
+    width: 100%;
 }
 
 
