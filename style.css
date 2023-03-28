@@ -1,3 +1,4 @@
+
 .section1 {
     background-image: url(http://ichef.bbci.co.uk/wwfeatures/1600_900/images/live/p0/3k/rz/p03krzlp.jpg);
     background-repeat:no-repeat;
@@ -13,7 +14,29 @@
 }
 p {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #54595F;
+    line-height: 150%;
 }
+
+#b{
+    background-color: transparent;
+    border-color: #54595F;
+    border-width: 1px;
+    color: #54595F;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative; left: 40%;
+}
+
+#b:hover{
+    background-color: #54595fbb;
+    border-color: #54595F;
+    color: #ddd;
+}
+
 #firma {
     position: inherit;
     border-radius: 0%;
@@ -58,6 +81,7 @@ p {
 
 #section4 {
     color: #878788;
+    font-size: 14px;
     padding-left: 100px;
     padding-right: 100px;
     text-align: left;
@@ -100,6 +124,12 @@ p {
     margin: 20px auto 0 auto;
 }
 
+.lineaTable {
+    border-left: 1px solid black;
+    height: 450px;
+    margin: 50px;
+}
+
 .linea-puntos {
     border-top: 1px solid hsl(208, 100%, 97%);  
     height: 2px;
@@ -120,8 +150,17 @@ p {
 #portfolio {
     border: 1px solid #878788;
 }
-menu:hover{
-    background-color: #ddd;
+.menu{
+    background: none;
+    border: none;
+}
+.menu:hover{
+    line-height: 10px; color: #000;
+    text-decoration-line: underline; color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    /*https://webdesign.tutsplus.com/es/tutorials/how-to-create-different-css-hover-effects-from-scratch--cms-34222*/
 }
 p:last-of-type{
     
@@ -130,6 +169,7 @@ p:last-of-type{
 }
 table{
     width: 100%;
+
 }
 
 form{
