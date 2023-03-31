@@ -1,8 +1,7 @@
-
 .section1 {
     background-image: url(http://ichef.bbci.co.uk/wwfeatures/1600_900/images/live/p0/3k/rz/p03krzlp.jpg);
     background-repeat:no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 800px;
 }
 
@@ -18,7 +17,6 @@
 p {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #54595F;
     line-height: 150%;
 }
 
@@ -75,9 +73,9 @@ p {
 }
 
 .section2 {
-    background-image: url(https://i.pinimg.com/originals/a9/69/25/a969251ede6e85501d1259e478cae67b.jpg);
+    background-image: url(https://mortenhilmer.com/wp-content/uploads/2019/12/Morten_Hilmer_Bio_ulv3_Mobile.jpg);/*https://i.pinimg.com/originals/a9/69/25/a969251ede6e85501d1259e478cae67b.jpg*/
     background-repeat:no-repeat;
-    background-size: 100%;
+    background-size: cover;
     margin-top: 0px;
     height: 600px;
     color: hsl(208, 100%, 97%);  
@@ -88,7 +86,7 @@ p {
     padding-top: 250px;
     padding-left: 200px;
     padding-right: 200px;
-    
+    color: hsl(208, 100%, 97%);  
 }
 
 .section3 {
@@ -110,8 +108,8 @@ p {
     align-items: center;
     background-image: url(https://10wallpaper.com/wallpaper/1366x768/1901/Antarctic_Continental_Glacier_Polar_Night_Ocean_1366x768.jpg); /*http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg*/
     background-repeat: no-repeat;
-    background-size: 100%;
-    filter: brightness(40%);
+    background-size: cover;
+    filter: brightness(100%);
     object-fit: fill;
     color: hsl(208, 100%, 97%);
     vertical-align: middle;
@@ -126,7 +124,7 @@ p {
 .section6 {
     background-image: url(https://blog.lacie.com/wp-content/uploads/sites/8/2020/03/Hilmer_060414_12887.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 1000px;
     vertical-align: middle;
     color: #878788;
@@ -241,11 +239,33 @@ input[type="text"] {
 input[type="button"] {
     position: relative; left: 38%; 
     width: 400px;
+    background-color: transparent;
+    color:#ddd;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    
+}
+
+input[type="search"] {
+    position: relative; left: 38%; 
+    width: 400px;
     background-color: none;
+    color:black;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    
+}
+
+input[type="checkbox"] {
+    position: relative; left: 38%; 
+    background-color: transparent;
     color:hwb(30 42% 57%);
     padding: 12px 20px;
     margin: 5px 0;
     box-sizing: border-box;
+    
 }
 
 #hojas{
@@ -284,4 +304,7 @@ input[type="button"] {
     background-color: #dddddd27;
 }
 
+label{
+    position: relative; left: 38%;
+}
 

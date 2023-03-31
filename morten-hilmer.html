@@ -8,6 +8,8 @@
 </head>
 <link rel="stylesheet" href="style.css"/>
 <body>
+    
+    <i style="font-size:24px" class="fa"></i>
     <div class="section1">
     <img id="firma" src="https://mortenhilmer.com/wp-content/uploads/2019/08/mortenhilmer_logo_top_sort.svg">
         <table id="start">
@@ -140,7 +142,7 @@
                 <p>Blizzard</p>
                 <img src="https://mortenhilmer.com/wp-content/uploads/2020/02/gallery_blizzard_thumb1-1024x683.png" width="300px" height="200px">
                 <a href="https://mortenhilmer.com/gallery-blizzard/">
-                    <p><input type="button" value="view gallery"></p>
+                    <p><button id="viwGallery">view gallery</button></p>
                 </a>
             </th>
             <th class="table-hover">
@@ -150,7 +152,7 @@
                 <p>World of Trees</p>
                 <img src="https://mortenhilmer.com/wp-content/uploads/2020/02/gallery_wot_thumb-1024x683.png" width="300px" height="200px">
                 <a href="https://mortenhilmer.com/world-of-trees/">
-                    <p><input type="button" value="view gallery"></p>
+                    <p><button id="viwGallery">view gallery</button></p>
                </a>
             </th>
             <th class="table-hover">
@@ -160,7 +162,7 @@
                 <p>Silence</p>
                 <img src="https://mortenhilmer.com/wp-content/uploads/2020/02/gallery_silence_thumb-1024x683.png" width="300px" height="200px">
                 <a href="https://mortenhilmer.com/gallery-silence/">
-                    <p><button id="viwGallery">view gallery</button> </p>
+                    <p><button id="viwGallery">view gallery</button></p>
                 </a>
             </th>
         </tr>
@@ -181,7 +183,8 @@
         <label for="country">Country</label><br>
         <input type="search" value="-" name="country" ><br>
         
-        <input type="checkbox"> Opt in to receive news and updates.<br>
+        <input type="checkbox" id="check">
+        <label for="check">Opt in to receive news and updates.</label><br>
         <input type="button" value="SUSCRIBE"><br>
     </form>
     
