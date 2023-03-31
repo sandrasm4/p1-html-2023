@@ -6,7 +6,10 @@
     height: 800px;
 }
 
-
+#start{
+    position: relative; left: 70%; 
+    width: 25%;
+}
 .box {
     position: absolute; top: 20px; right: 20px;
     background-color:transparent;
@@ -19,6 +22,9 @@ p {
     line-height: 150%;
 }
 
+#arboles{
+    position: relative; left: 40%;
+}
 #b{
     background-color: transparent;
     border-color: #54595F;
@@ -35,14 +41,16 @@ p {
     background-color: #54595fbb;
     border-color: #54595F;
     color: #ddd;
+    cursor: pointer;
 }
 
 #firma {
-    position: inherit;
+    position: relative; top: 30px; left: 30px;
     border-radius: 0%;
     border: 0px;
-    width: 200px;
-    height: 100px;
+    width: 170px;
+    height: 70px;
+
 }
 #firma2 {
     position: absolute; right: 40%;
@@ -56,7 +64,16 @@ p {
     position: relative; top: 200px;
     text-align: center;
     letter-spacing: 5px;
+    
+    
 }
+
+#name::before{
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 2s ease-in;
+}
+
 .section2 {
     background-image: url(https://i.pinimg.com/originals/a9/69/25/a969251ede6e85501d1259e478cae67b.jpg);
     background-repeat:no-repeat;
@@ -91,10 +108,10 @@ p {
     
     border-collapse: collapse;
     align-items: center;
-    background-image: url(http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg);
+    background-image: url(https://10wallpaper.com/wallpaper/1366x768/1901/Antarctic_Continental_Glacier_Polar_Night_Ocean_1366x768.jpg); /*http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg*/
     background-repeat: no-repeat;
     background-size: 100%;
-    /*filter: brightness(40%);*/
+    filter: brightness(40%);
     object-fit: fill;
     color: hsl(208, 100%, 97%);
     vertical-align: middle;
@@ -151,17 +168,56 @@ p {
     border: 1px solid #878788;
 }
 .menu{
+    color: #878788;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
     background: none;
     border: none;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, black);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .5s;
 }
+
+
+
 .menu:hover{
-    line-height: 10px; color: #000;
-    text-decoration-line: underline; color: #000;
-    transform: scaleX(0);
+    cursor: pointer;
+    background-size: 110% 1px;
+
+  /*  transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;*/
     /*https://webdesign.tutsplus.com/es/tutorials/how-to-create-different-css-hover-effects-from-scratch--cms-34222*/
 }
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+#viwGallery{
+    background-color: none;
+    border-color: #ddd;
+    border-width: 1px;
+    color: #ddd;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+#viwGallery:focus{
+    outline: none;
+    border: none;
+}
+#viwGallery:hover{
+    background-color: #ddd;
+    border-color: #54595F;
+    color: #54595fbb;
+}
+
 p:last-of-type{
     
     text-align: center;
@@ -172,12 +228,60 @@ table{
 
 }
 
-form{
-    text-align: center;
+input[type="text"] {
+    position: relative; left: 38%; 
+    width: 400px;
+    background-color: none;
+    color:hwb(30 42% 57%);
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
 }
+
+input[type="button"] {
+    position: relative; left: 38%; 
+    width: 400px;
+    background-color: none;
+    color:hwb(30 42% 57%);
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+#hojas{
+    position: relative; left: 48%
+}
+#newsletter{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18;
+}
+#join{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10;
+}
+#get{
+    position: relative; left: 30%;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    font-size: calc(130%);
+    color:hwb(30 42% 57%);
+}
+#country{
+    align-items: start;
+    position: relative; left: 38%; 
+    width: 400px;
+    background-color: none;
+    color:hwb(30 42% 57%);
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10;
+}
+
 .table-hover:hover{
     background-color: #dddddd27;
-    
 }
 
 
