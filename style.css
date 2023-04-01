@@ -2,7 +2,11 @@
     background-image: url(http://ichef.bbci.co.uk/wwfeatures/1600_900/images/live/p0/3k/rz/p03krzlp.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 1300px;
+    font-size: 150%;
+    color: #54595F;
+
+    
 }
 
 #mainMenu{
@@ -52,22 +56,27 @@ img{
 }
 
 .section2 {
-    margin-top: 5px;
-    background-image: url(https://mortenhilmer.com/wp-content/uploads/2019/12/Morten_Hilmer_Bio_ulv3_Mobile.jpg);/*https://i.pinimg.com/originals/a9/69/25/a969251ede6e85501d1259e478cae67b.jpg*/
+    margin-top: 7px;
+    background-image: url(https://naturfotografen-forum.de/data/o/275/1375489/image::Helge_Schulz_woelfe_in_deutschland.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     height: fit-content;
     color: hsl(208, 100%, 97%);  
     padding-left: 25%;
     padding-right: 25%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-size: 200%;
+}
+.section2 p:last-of-type{
+    font-size: 50%;
 }
 
 .section3 {
-    margin-top: 5px;
+    margin-top: 7px;
     font-size: 25pt; 
     background-color: rgb(229, 227, 224);
+    
 }
 
 p {
@@ -77,24 +86,42 @@ p {
 }
 
 #section4 {
-    padding: 0 2em 1em 0;
     color: #878788;
     font-size: 14px;
-    
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
 #section4 img{
     border: 1px solid #878788; 
     width: 80%;
-    height: 60%; 
+    height: 55%; 
 }
+
+#section4 p{
+    text-align: left;
+    font-size: 20px;
+}
+
+@keyframes arrive{
+    from {left: 100%; }
+    to {left: 0%; }
+}
+
 
 #section4 td:nth-of-type(3){
     width: 50%;
     padding: 5%;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-    font-size: 20px;
+    animation-name: arrive;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+#ren{
+    animation-delay: 0.5s;
 }
 
 .lineaTable {
@@ -121,35 +148,37 @@ p {
 }
 
 .section5 {
-    margin-top: 5px;
-
-    background-image: url(https://10wallpaper.com/wallpaper/1366x768/1901/Antarctic_Continental_Glacier_Polar_Night_Ocean_1366x768.jpg); /*http://www.thegoldenscope.com/wp-content/uploads/2015/09/los-glaciares-11b.jpg*/
+    margin-top: 7px;
+    background-image: url(https://10wallpaper.com/wallpaper/1366x768/1901/Antarctic_Continental_Glacier_Polar_Night_Ocean_1366x768.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(100%);
     color: hsl(208, 100%, 97%);
-    vertical-align: middle;
-    align-content: center;
+ 
 }
-.section5 th{
+
+.section5 th{   
     padding-top: 10%;
     padding-bottom: 10%;
-    font-size: 30px;
+    font-size: 100%;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgba(41, 41, 41, 0.4);
 }
 
 .section5 th:hover{
     background-color: #dddddd27;
 }
 .section5 th img:nth-of-type(1){
-    width: 60px;
-    height: 60px;
+    width: 15%;
+    height: 15%;
 }
 .section5 th img:nth-of-type(2){
-    width: 300px;
-    height:200px
+    width: 60%;
+    height:65%
 }
 
+.section5 th p:nth-child(3){
+    font-size: 150%;
+}
 .section5 button{
     background-color: transparent;
     border-color: #ddd;
@@ -177,10 +206,7 @@ p {
     background-image: url(https://blog.lacie.com/wp-content/uploads/sites/8/2020/03/Hilmer_060414_12887.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
+    height: 900px;
     color: #878788;
     padding-top: 10%;
     padding-bottom: 10%;  
@@ -200,7 +226,7 @@ p {
     height: 2px;
     max-width: 200px;
     padding: 0;
-    margin: 20px auto 0 auto;
+    margin: auto auto 0 auto;
 }
 
 
@@ -209,14 +235,10 @@ button:focus {
     outline: none;
 }
 
-
-
-
-
 table{
     width: 100%;
 }
-.section6 p:nth-of-type(1){
+/*.section6 p:nth-of-type(1){
     font-size: 18px;
 }
 .section6 p:nth-of-type(2){
@@ -228,11 +250,20 @@ table{
     font-size: calc(130%);
     margin-left: auto;
     margin-right: auto;
+}*/
+
+form input{
+    width:40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 30%;
 }
 
+
 input[type="text"] {
-    position: relative; left: 38%; 
-    width: 400px;
+    width:40%;
+    margin-left: 30%;
+    margin-right: 30%;
     background-color: none;
     color:hwb(30 42% 57%);
     padding: 12px 20px;
@@ -241,8 +272,6 @@ input[type="text"] {
 }
 
 input[type="button"] {
-    position: relative; left: 38%; 
-    width: 400px;
     background-color: transparent;
     color:#ddd;
     padding: 12px 20px;
@@ -252,8 +281,6 @@ input[type="button"] {
 }
 
 input[type="search"] {
-    position: relative; left: 38%; 
-    width: 400px;
     background-color: none;
     color:black;
     padding: 12px 20px;
@@ -263,7 +290,6 @@ input[type="search"] {
 }
 
 input[type="checkbox"] {
-    position: relative; left: 38%; 
     background-color: transparent;
     color:hwb(30 42% 57%);
     padding: 12px 20px;
