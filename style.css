@@ -1,11 +1,13 @@
 /*---------------------------------Presentación de la pagina---------------------------------------------------------*/
 
 .section1 {
+    margin-top: 7px;
     background-image: url(http://ichef.bbci.co.uk/wwfeatures/1600_900/images/live/p0/3k/rz/p03krzlp.jpg);
+    background-position-x: center;
     background-repeat:no-repeat;
     background-size: cover;
-    background-position-x: center;
     min-height: 900px;
+
     font-size: 150%;
     color: #54595F;  
 }
@@ -57,11 +59,9 @@
     background-repeat:no-repeat;
     background-size: cover;
     height: fit-content;
+
     color: hsl(208, 100%, 97%);  
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding: 7% 25% 7% 25%;
     font-size: 150%;
 }
 .section2 p:last-of-type{
@@ -72,27 +72,24 @@
 
 .section3 {
     margin-top: 7px;
-    font-size: 25pt; 
     background-color: rgb(229, 227, 224);
-    
 }
 
-#section4 {
-    color: #878788;
-    font-size: 14px;
-    padding-left: 15%;
-    padding-right: 15%;
+#s3Title{
+    text-align: center;
+    font-size: 200%; 
 }
 
-#section4 img{
+.section3 table img{
     border: 1px solid #878788; 
     width: 80%;
     height: 55%; 
 }
 
-#section4 p{
+.section3 p{
+    color: #878788;
     text-align: left;
-    font-size: 20px;
+    font-size: 150%;
 }
 
 .lineaTable {
@@ -101,7 +98,7 @@
     height: 550px;
 }
 
-#section4 button{
+.section3 button{
     background-color: transparent;
     border-color: #54595F;
     border-width: 1px;
@@ -111,14 +108,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#section4 button:hover{
+.section3 button:hover{
     background-color: #54595fbb;
     border-color: #54595F;
     color: #ddd;
     cursor: pointer;
 }
 
-#section4 td:nth-of-type(3){
+.section3 td:nth-of-type(3){
     width: 50%;
     padding: 5%;
     margin-left: auto;
@@ -143,7 +140,7 @@
 
 /*--------------------------------------------Tabla de Galerias de Fotos------------------------------------------*/
 
-.section5 {
+.section4 {
     margin-top: 7px;
     background-image: url(https://10wallpaper.com/wallpaper/1366x768/1901/Antarctic_Continental_Glacier_Polar_Night_Ocean_1366x768.jpg);    
     background-repeat: no-repeat;
@@ -151,7 +148,7 @@
     color: hsl(208, 100%, 97%);
 }
 
-.section5 th{   
+.section4 th{   
     padding-top: 10%;
     padding-bottom: 10%;
     font-size: 100%;
@@ -159,22 +156,22 @@
     background-color: rgba(41, 41, 41, 0.4);
 }
 
-.section5 th:hover{
+.section4 th:hover{
     background-color: #dddddd27;
 }
-.section5 th img:nth-of-type(1){
+.section4 th img:nth-of-type(1){
     width: 15%;
     height: 15%;
 }
-.section5 th img:nth-of-type(2){
+.section4 th img:nth-of-type(2){
     width: 60%;
     height:65%
 }
 
-.section5 th p:nth-child(3){
+.section4 th p:nth-child(3){
     font-size: 150%;
 }
-.section5 button{
+.section4 button{
     background-color: transparent;
     border-color: #ddd;
     border-width: 1px;
@@ -185,19 +182,19 @@
     margin-top: 50px;
 }
    
-.section5 button:focus{
+.section4 button:focus{
     outline: none;
     border: none;
 }
 
-.section5 button:hover{
+.section4 button:hover{
     background-color: #ddd;
     border-color: #54595F;
     color: #54595fbb;
 }
 
 /*---------------------------------------Formulario Final-------------------------------------------------*/
-.section6 {
+.section5 {
     margin-top: 5px;
     background-image: url(https://blog.lacie.com/wp-content/uploads/sites/8/2020/03/Hilmer_060414_12887.jpg);
     background-repeat: no-repeat;
@@ -227,10 +224,6 @@ input[type="button"] {
     cursor: pointer;
 }
 
-label{
-   /* position: relative; left: 38%;*/
-}
-
 p:last-of-type{
     font-size: 12px;
 }
@@ -244,7 +237,7 @@ img{
     margin-right: auto;
 }
 
-/*Fuente y tamaños por defecto. Texto centrado*/
+/*Fuente e interlineado por defecto. Texto centrado*/
 p {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
