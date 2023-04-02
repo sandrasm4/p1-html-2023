@@ -11,12 +11,8 @@
     font-size: 150%;
     color: #54595F;  
 }
-
-.social i{   
-    color: #484646;
-}
-.social a:visited{
-    color: #878788; 
+.section1 table{
+    width: 100%;
 }
 
 #mainMenu{
@@ -45,11 +41,12 @@
     background-size: 110% 1px;
 }
 
-.section1:last-child {    
-    position: relative; top: 200px;
+#titulo {    
+    margin-top: 10%;
     text-align: center;
-    letter-spacing: 5px; 
+    letter-spacing: 5px;   
 }
+
 
 /*------------------------------------ Estilo de vida del Fotografo --------------------------------------------*/
 
@@ -106,6 +103,7 @@
     padding: 15px 25px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    position: absolute; left: 10%;
 }
 
 .section3 button:hover{
@@ -115,20 +113,27 @@
     cursor: pointer;
 }
 
-.section3 td:nth-of-type(3){
+.section3 th:nth-of-type(3){
     width: 50%;
     padding: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    animation-name: arrive;
+    position: relative;
+    /*animation-name: arrive;
     position: relative;
     animation-fill-mode: forwards;
-    animation-duration: 2s;
+    animation-duration: 2s;*/
+}
+.section3 table .linea-puntos{
+    margin-left: 0;
 }
 
-#reno{
-    animation-delay: 0.5s;
+#gallery {
+    margin-left: 0;
 }
+
+
+/*#reno{
+    animation-delay: 0.5s;
+}*/
 
 /* Entrada de la descripción de los proyectos ocurre al cargar la pagina,
     me faltaría conseguir que fuera cuando aparece en pantalla haciendo sroll*/
@@ -145,6 +150,7 @@
     background-image: url(https://10wallpaper.com/wallpaper/1366x768/1901/Antarctic_Continental_Glacier_Polar_Night_Ocean_1366x768.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
+
     color: hsl(208, 100%, 97%);
 }
 
@@ -195,21 +201,26 @@
 
 /*---------------------------------------Formulario Final-------------------------------------------------*/
 .section5 {
-    margin-top: 5px;
+    margin-top: 7px;
     background-image: url(https://blog.lacie.com/wp-content/uploads/sites/8/2020/03/Hilmer_060414_12887.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    min-height: 900px;
+
     color: #878788;
     padding-top: 10%;
-    padding-bottom: 10%;  
+    padding-bottom: 10%; 
+}
+
+.section5 p:nth-of-type(3){
+    font-size: 150%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 form input{
     width:40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 5px;
+    margin:5px 30% 5px 30%;
     padding: 12px 20px;
     color:hwb(30 42% 57%);
     background-color: none;
@@ -222,6 +233,34 @@ input[type="button"] {
     border: none; 
     background-color: #54595f19;
     cursor: pointer;
+    margin-bottom: 5%;
+}
+
+label{
+    margin-left: 30.5%;
+    margin-right: auto;
+}
+
+#checkbox {
+    margin-left: 30%;
+    margin-right: auto;
+    width: 40%;
+}
+
+#checkbox th :last-of-type{
+    margin: 0%;
+    padding: 0;
+    margin-left: 0%;
+    width: fit-content;
+    text-align: left;
+}
+
+.social {
+    margin-left: 20%;
+}
+
+.social a{
+    padding-right: 40px;
 }
 
 p:last-of-type{
@@ -260,4 +299,13 @@ p {
     padding: 0;
     margin: auto auto 0 auto;
 }
+
+/*Icoonos de redes sociales*/
+i{
+    color: #878788; 
+}
+a:visited{
+    color: #878788; 
+}
+
 

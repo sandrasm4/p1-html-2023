@@ -15,34 +15,25 @@
                 <th>
                     <a href="https://mortenhilmer.com/"><img src="https://mortenhilmer.com/wp-content/uploads/2019/08/mortenhilmer_logo_top_sort.svg" alt="Morten Hilmer signature" width="170px" height="70px"></a>
                 </th>
-                <th>
-                    <table id="mainMenu">           
-                        <tr>
-                            <th><a href="https://mortenhilmer.com/biography/"><button  class="menu">Biography</button></a></th>
-                            <th><a href="https://mortenhilmer.com/gallery/"></a><button  class="menu">Gallery</button></a></th>
-                            <th><a href="https://mortenhilmer.com/podcasts/"></a><button  class="menu">Podcast</button></a></th>
-                            <th><a href="https://mortenhilmer.com/stored/"></a><button  class="menu">Stored</button></a></th>
-                            <th><a href="https://mortenhilmer.com/contact/"></a><button  class="menu">Contact</button></a></th>
-                        </tr>  
-                    </table>
+                <th id="mainMenu">
+                    <td><a href="https://mortenhilmer.com/biography/"><button  class="menu">Biography</button></a></td>
+                    <td><a href="https://mortenhilmer.com/gallery/"></a><button  class="menu">Gallery</button></a></td>
+                    <td><a href="https://mortenhilmer.com/podcasts/"></a><button  class="menu">Podcast</button></a></td>
+                    <td><a href="https://mortenhilmer.com/stored/"></a><button  class="menu">Stored</button></a></td>
+                    <td><a href="https://mortenhilmer.com/contact/"></a><button  class="menu">Contact</button></a></td>  
                 </th>
                 <th>
-                    <table class="social">
-                        <tr>
-                            <th><a href="https://mortenhilmer.com/biography/"><i class="fab fa-instagram"></i></a></th>
-                            <th><a href="https://mortenhilmer.com/biography/"><i class="fab fa-facebook-f"></i></a></th>
-                            <th><a href="https://mortenhilmer.com/biography/"><i class="fab fa-youtube"></i></a></th>
-                        </tr>
-                    </table>
+                    <td><a href="https://www.instagram.com/mortenhilmer/"><i class="fab fa-instagram"></i></a></td>
+                    <td><a href="https://www.facebook.com/MortenHilmer/"><i class="fab fa-facebook-f"></i></a></td>
+                    <td><a href="https://www.youtube.com/user/MortenHilmer"><i class="fab fa-youtube"></i></a></td>
                 </th>
             </tr>
         </table>
 
-        <div>
+        <div id="titulo">
             <img src="https://mortenhilmer.com/wp-content/uploads/2019/12/Mobile-Menu_Logo_02-01.svg" alt="Logo with trees" width="200px" height="100px">
-            <br>
             <div class="linea"></div>
-            <p>NATURE AND WILDLIFE PHOTOGRAPHER</p>
+            <p id="t">NATURE AND WILDLIFE PHOTOGRAPHER</p>
             <div class="linea"></div>
             <p >Morten Hilmer</p>
         </div>   
@@ -67,26 +58,26 @@
         
         <table>
             <tr>
-                <td><img src="https://mortenhilmer.com/wp-content/uploads/2020/07/Morten_Hilmer_Project_Elesmere.jpg" alt="Polar fox"></td>
-                <td><div class="lineaTable"></div></td>
-                <td>
+                <th><img src="https://mortenhilmer.com/wp-content/uploads/2020/07/Morten_Hilmer_Project_Elesmere.jpg" alt="Polar fox"></th>
+                <th><div class="lineaTable"></div></th>
+                <th>
                     <p><strong>Ellesmere</strong> Island</p>
                     <div class="linea-puntos"></div>
                     <p><strong>My Dream of the White Wolf</strong></p>
                     <p>From the small window in the Twin Otter airplane, I could see the desolated land underneath. Only ice and mountains, black and white, nothing else. A frozen world with no sign of life. This is Ellesmere Island and it is here I am going to spend the next two months chasing my dream – the dream about getting a glimpse of and maybe even photograph the white Arctic wolf.</p>
-                    <a href="https://mortenhilmer.com/featured-projects-ellesmere/"><button>view project</button></a>
-                </td>
+                    <a id="gallery" href="https://mortenhilmer.com/featured-projects-ellesmere/"><button>view project</button></a>
+                </th>
             </tr>
             <tr>
-                <td><img src="https://mortenhilmer.com/wp-content/uploads/2020/02/fp_svalbard1.jpg" alt="Reindeer"></td>
-                <td><div class="lineaTable"></div></td>
-                <td id="reno">
+                <th><img src="https://mortenhilmer.com/wp-content/uploads/2020/02/fp_svalbard1.jpg" alt="Reindeer"></th>
+                <th><div class="lineaTable"></div></th>
+                <th id="reno">
                     <p><strong>Svalbard</strong> Polar Bear Land</p>
                     <div class="linea-puntos"></div>
                     <p><strong>Arctic Photo Adventure</strong></p>
                     <p>I am on Svalbard for 10 days to photograph wildlife and landscapes. My plan is to be dropped off by boat on a small desolated island and stay there for a little less than a week to enjoy life with wild camping, wildlife photography and beautiful landscapes.</p>
                     <a href="https://mortenhilmer.com/featured-projects-svalbard/"><button>view project</button></a>
-                </td>
+                </th>
             </tr>
         </table>
     </div>
@@ -128,26 +119,28 @@
         <div class="linea-puntos"></div>
         <p>Get free photography tip and be the first to know about upcoming adventures, workshops, fine art prints and more.</p>
         <form>
-            <input type="text" value="First Name"><br>
-            <input type="text" value="Last Name"><br>
-            <input type="text" value="Enter your Email"><br>
+            <input type="text" value="First Name">
+            <input type="text" value="Last Name">
+            <input type="text" value="Enter your Email">
+            <label for="country">Country</label>
+            <input type="search" value="-" id="country">
             
-            <label for="country">Country</label><br>
-            <input type="search" value="-" id="country" ><br>
-            
-            <input type="checkbox" id="check">
-            <label for="check">Opt in to receive news and updates.</label><br>
-            
-            <input type="button" value="SUSCRIBE"><br>
-        </form>
-        <table class="social">
-            <thead>
+            <table id="checkbox">
                 <tr>
-                    <th><a href="https://www.facebook.com/MortenHilmer/"><i class="fab fa-facebook-f"></i></a></th>
-                    <th><a href="https://www.instagram.com/mortenhilmer/"><i class="fab fa-instagram"></i></a></th>
-                    <th><a href="https://www.youtube.com/user/MortenHilmer"><i class="fab fa-youtube"></i></a></th>
+                    <th><input type="checkbox" id="check"></th>
+                    <th><label for="check">Opt in to receive news and updates.</label></th>
                 </tr>
-            </thead>
+            </table>
+
+            <input type="button" value="SUSCRIBE">
+        </form>
+        <br>
+        <table class="social">
+            <tr>
+                <th><a href="https://www.facebook.com/MortenHilmer/"><i class="fab fa-facebook-f"></i></a></th>
+                <th><a href="https://www.instagram.com/mortenhilmer/"><i class="fab fa-instagram"></i></a></th>
+                <th><a href="https://www.youtube.com/user/MortenHilmer"><i class="fab fa-youtube"></i></a></th>
+            </tr>
         </table>
     </div>
 <p>Copyright © 2020 | Morten Hilmer | Designed by Wildbirds MedieproduktionWildbirds</p>
