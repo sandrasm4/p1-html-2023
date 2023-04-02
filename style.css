@@ -1,16 +1,26 @@
+/*---------------------------------Presentación de la pagina---------------------------------------------------------*/
+
 .section1 {
     background-image: url(http://ichef.bbci.co.uk/wwfeatures/1600_900/images/live/p0/3k/rz/p03krzlp.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-    height: 1300px;
+    background-position-x: center;
+    min-height: 900px;
     font-size: 150%;
-    color: #54595F;
+    color: #54595F;  
+}
 
-    
+.social i{   
+    color: #484646;
+}
+.social a:visited{
+    color: #878788; 
 }
 
 #mainMenu{
-    position: relative; left: 70%; 
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 50px;
     width: 25%;
 }
 
@@ -33,27 +43,13 @@
     background-size: 110% 1px;
 }
 
-#firma {
-    display: block;
-    margin-left: 15px;
-    margin-top: 15px;
-    border: 0px;
-    width: 170px;
-    height: 70px;
-}
-
-.section1:last-child {
-    
+.section1:last-child {    
     position: relative; top: 200px;
     text-align: center;
     letter-spacing: 5px; 
 }
 
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*------------------------------------ Estilo de vida del Fotografo --------------------------------------------*/
 
 .section2 {
     margin-top: 7px;
@@ -66,23 +62,19 @@ img{
     padding-right: 25%;
     padding-top: 7%;
     padding-bottom: 7%;
-    font-size: 200%;
+    font-size: 150%;
 }
 .section2 p:last-of-type{
     font-size: 50%;
 }
+
+/*----------------------------------------- Proyectos -------------------------------------------------*/
 
 .section3 {
     margin-top: 7px;
     font-size: 25pt; 
     background-color: rgb(229, 227, 224);
     
-}
-
-p {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 150%;
 }
 
 #section4 {
@@ -101,27 +93,6 @@ p {
 #section4 p{
     text-align: left;
     font-size: 20px;
-}
-
-@keyframes arrive{
-    from {left: 100%; }
-    to {left: 0%; }
-}
-
-
-#section4 td:nth-of-type(3){
-    width: 50%;
-    padding: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    animation-name: arrive;
-    position: relative;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-}
-
-#ren{
-    animation-delay: 0.5s;
 }
 
 .lineaTable {
@@ -147,13 +118,37 @@ p {
     cursor: pointer;
 }
 
+#section4 td:nth-of-type(3){
+    width: 50%;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: arrive;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+#reno{
+    animation-delay: 0.5s;
+}
+
+/* Entrada de la descripción de los proyectos ocurre al cargar la pagina,
+    me faltaría conseguir que fuera cuando aparece en pantalla haciendo sroll*/
+    @keyframes arrive{
+        from {left: 100%; }
+        to {left: 0%; }
+    }
+
+
+/*--------------------------------------------Tabla de Galerias de Fotos------------------------------------------*/
+
 .section5 {
     margin-top: 7px;
     background-image: url(https://10wallpaper.com/wallpaper/1366x768/1901/Antarctic_Continental_Glacier_Polar_Night_Ocean_1366x768.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
     color: hsl(208, 100%, 97%);
- 
 }
 
 .section5 th{   
@@ -201,6 +196,7 @@ p {
     color: #54595fbb;
 }
 
+/*---------------------------------------Formulario Final-------------------------------------------------*/
 .section6 {
     margin-top: 5px;
     background-image: url(https://blog.lacie.com/wp-content/uploads/sites/8/2020/03/Hilmer_060414_12887.jpg);
@@ -212,6 +208,50 @@ p {
     padding-bottom: 10%;  
 }
 
+form input{
+    width:40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5px;
+    padding: 12px 20px;
+    color:hwb(30 42% 57%);
+    background-color: none;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color: transparent;
+    color:white;  
+    border: none; 
+    background-color: #54595f19;
+    cursor: pointer;
+}
+
+label{
+   /* position: relative; left: 38%;*/
+}
+
+p:last-of-type{
+    font-size: 12px;
+}
+
+/*--------------------------------------------Elementos comunes-----------------------------------------------*/
+
+/*Por defecto las imagenes estaran centradas*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Fuente y tamaños por defecto. Texto centrado*/
+p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+}
+
+/*Lineas separadoras*/
 .linea {
     border-top: 1px solid black;
     height: 2px;
@@ -220,7 +260,6 @@ p {
     margin: 20px auto 0 auto;
 }
 
-
 .linea-puntos {
     border-bottom:1px dotted;
     height: 2px;
@@ -228,82 +267,4 @@ p {
     padding: 0;
     margin: auto auto 0 auto;
 }
-
-
-button:focus {
-    border: none;
-    outline: none;
-}
-
-table{
-    width: 100%;
-}
-/*.section6 p:nth-of-type(1){
-    font-size: 18px;
-}
-.section6 p:nth-of-type(2){
-    font-size: 10px;
-}
-.section6 p:nth-of-type(3){
-    align-content: center;
-    width: 40%;
-    font-size: calc(130%);
-    margin-left: auto;
-    margin-right: auto;
-}*/
-
-form input{
-    width:40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-left: 30%;
-}
-
-
-input[type="text"] {
-    width:40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: none;
-    color:hwb(30 42% 57%);
-    padding: 12px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-}
-
-input[type="button"] {
-    background-color: transparent;
-    color:#ddd;
-    padding: 12px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    
-}
-
-input[type="search"] {
-    background-color: none;
-    color:black;
-    padding: 12px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    
-}
-
-input[type="checkbox"] {
-    background-color: transparent;
-    color:hwb(30 42% 57%);
-    padding: 12px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    
-}
-
-label{
-   /* position: relative; left: 38%;*/
-}
-
-/*p:last-of-type{
-    text-align: center;
-    color: black;
-}*/
 
